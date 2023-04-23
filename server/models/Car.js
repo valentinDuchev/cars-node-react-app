@@ -1,7 +1,7 @@
 const { Schema, model, Types: { ObjectId } } = require('mongoose');
 
 
-const quizSchema = new Schema({
+const carSchema = new Schema({
 
     brand: {
         type: String,
@@ -48,4 +48,4 @@ const quizSchema = new Schema({
 })
 
 
-module.exports = model('Quiz', quizSchema)
+module.exports = model('Car', carSchema)
