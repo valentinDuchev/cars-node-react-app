@@ -1,122 +1,88 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
+import styles from '../css/Footer.module.css';
+import '../css/all.min.css';
 
 export default function Footer() {
   return (
     <MDBFooter bgColor='light' className='text-center text-lg-start text-muted'>
-      <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
-        <div>
-          <a href='' className='me-4 text-reset'>
-            <MDBIcon fab icon="facebook-f" />
-          </a>
-          <a href='' className='me-4 text-reset'>
-            <MDBIcon fab icon="twitter" />
-          </a>
-          <a href='' className='me-4 text-reset'>
-            <MDBIcon fab icon="google" />
-          </a>
-          <a href='' className='me-4 text-reset'>
-            <MDBIcon fab icon="instagram" />
-          </a>
-          <a href='' className='me-4 text-reset'>
-            <MDBIcon fab icon="linkedin" />
-          </a>
-          <a href='' className='me-4 text-reset'>
-            <MDBIcon fab icon="github" />
-          </a>
-        </div>
-      </section>
-
       <section className=''>
         <MDBContainer className='text-center text-md-start mt-5'>
           <MDBRow className='mt-3'>
             <MDBCol md="3" lg="4" xl="3" className='mx-auto mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>
-                <MDBIcon icon="gem" className="me-3" />
+              <h6 className='text-uppercase text-dark fw-bold mb-4'>
+                <MDBIcon icon="car" className="me-3" />
                 Apex
               </h6>
+              <p>Имаме широка гама от автомобили за наем и предлагаме различни пакети за наемане на автомобили за кратки и дълги периоди от време.</p>
               <p>
-                Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit.
+                <MDBIcon icon="home" className="me-2"  />
+                ул.Владислав Варненчик 18, Варна
+              </p>
+              <p>
+                <MDBIcon icon="envelope" className="me-2" />
+                apexrental@gmail.com
+              </p>
+              <p>
+                <MDBIcon icon="phone" className="me-2" />
+                +359 88 361 8445
               </p>
             </MDBCol>
 
             <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>Products</h6>
+              <h6 className='text-uppercase text-dark fw-bold mb-4'>Информация</h6>
               <p>
-                <a href='#!' className='text-reset'>
-                  Angular
+                <a href='/about' className='text-reset'>
+                  За нас
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
-                  React
+                <a href='/cars' className='text-reset'>
+                  Автомобили
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
-                  Vue
-                </a>
-              </p>
-              <p>
-                <a href='#!' className='text-reset'>
-                  Laravel
-                </a>
-              </p>
-            </MDBCol>
-
-            <MDBCol md="3" lg="2" xl="2" className='mx-auto mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>Useful links</h6>
-              <p>
-                <a href='#!' className='text-reset'>
-                  Pricing
-                </a>
-              </p>
-              <p>
-                <a href='#!' className='text-reset'>
-                  Settings
-                </a>
-              </p>
-              <p>
-                <a href='#!' className='text-reset'>
-                  Orders
-                </a>
-              </p>
-              <p>
-                <a href='#!' className='text-reset'>
-                  Help
+              <a href='/contacts' className='text-reset'>
+                  Контакти
                 </a>
               </p>
             </MDBCol>
 
             <MDBCol md="4" lg="3" xl="3" className='mx-auto mb-md-0 mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>Contact</h6>
+              <h6 className='text-uppercase text-dark fw-bold mb-4'>Работно време</h6>
               <p>
-                <MDBIcon icon="home" className="me-2" />
-                New York, NY 10012, US
+                Понеделник-Петък: 9:00 - 20:00 
               </p>
               <p>
-                <MDBIcon icon="envelope" className="me-3" />
-                info@example.com
+                Събота: 9:00 - 19:00
               </p>
               <p>
-                <MDBIcon icon="phone" className="me-3" /> + 01 234 567 88
+                Неделя: почивен ден
               </p>
-              <p>
-                <MDBIcon icon="print" className="me-3" /> + 01 234 567 89
-              </p>
+            </MDBCol>
+
+            <MDBCol md="3" lg="3" xl="3" className='mx-auto mb-4'>
+            <h6 className='text-uppercase text-dark fw-bold mb-4 d-flex justify-content-center'>Абониране</h6>
+            <p>Абонирайте се и получавайте последните новини</p>
+            <form>
+                <div className="form-group">
+                <input type="email" className="form-control" placeholder="Въведете имейл" /><br/>
+                </div>
+                <div className="d-flex justify-content-center"> 
+                <button type="submit" className="btn btn-primary">Изпрати</button>
+                </div>
+            </form>
             </MDBCol>
           </MDBRow>
         </MDBContainer>
       </section>
-
-      <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
-        © 2021 Copyright:
-        <a className='text-reset fw-bold' href='https://mdbootstrap.com/'>
-          MDBootstrap.com
-        </a>
-      </div>
+      
+      <section className='d-flex justify-content-center border-bottom text-center text-dark p-3'>
+          <a href='https://github.com/valentinDuchev/cars-node-react-app' target="blank" className='me-4 text-reset justify-content-center'>
+            <MDBIcon fab icon="github" size="2x" />
+          </a>
+      </section>
     </MDBFooter>
   );
 }
