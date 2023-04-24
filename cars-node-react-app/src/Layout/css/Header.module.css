@@ -1,0 +1,36 @@
+@media (max-width: 768px) {
+    .navbar-nav {
+      flex-direction: column;
+    }
+    .nav-link {
+      padding: .5rem 0;
+    }
+    .navbar-toggler {
+      margin-top: .5rem;
+    }
+    .navbar-brand {
+      text-align: left;
+    }
+  }
+
+  a.navlink {
+    padding-left: 1.2rem !important;
+    padding-right: 1.2rem !important;
+    font-weight: bold;
+    color: black;
+  }
+
+.navbar {
+    padding-bottom: 20px !important;
+    padding-top: 27px !important;
+}
+
+.logo {
+    max-width: 4rem;
+    height: auto;
+    margin-left: auto;
+}
+  
+.brand {
+    text-align: left;
+}

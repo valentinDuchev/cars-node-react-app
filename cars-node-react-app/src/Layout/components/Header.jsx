@@ -25,7 +25,7 @@ export default function Header() {
   };
 
     return (
-    <Navbar expand="lg">
+    <Navbar expand="lg" className={styles.navbar}>
       <Container>
         <Navbar.Brand>
 
@@ -34,10 +34,10 @@ export default function Header() {
         <Navbar.Collapse id="basic-navbar-nav">
         <div className="mx-auto">
           <Nav className="justify-content-center" bg="light">
-            <Nav.Link className={styles.link} onClick={navigateToHome}>Начало</Nav.Link>
-            <Nav.Link onClick={navigateToAbout}>За нас</Nav.Link>
-            <Nav.Link onClick={navigateToCars}>Автомобили</Nav.Link>
-            <Nav.Link onClick={navigateToContacts}>Контакти</Nav.Link>
+            <Nav.Link onClick={navigateToHome} className={styles.navlink}>Начало</Nav.Link>
+            <Nav.Link onClick={navigateToAbout} className={styles.navlink}>За нас</Nav.Link>
+            <Nav.Link onClick={navigateToCars} className={styles.navlink}>Автомобили</Nav.Link>
+            <Nav.Link onClick={navigateToContacts} className={styles.navlink}>Контакти</Nav.Link>
           </Nav>
         </div>
         </Navbar.Collapse>
