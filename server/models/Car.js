@@ -37,17 +37,6 @@ const carSchema = new Schema({
     image: {
         type: String
     }
-
-    /* TODO
-    peopleLiked, 
-    peopleDisliked, 
-    peopleSolved
-    */
-
-
-
-
-
 })
 
 

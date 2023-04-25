@@ -4,7 +4,7 @@ require('../models/Car');
 //TODO - change database name
 const dbName = 'cars-rental';
 
-const connectionString = `mongodb://localhost:27017/${dbName}`;
+const connectionString = `mongodb+srv://valentinduchev:cska1948@cars-rental.pju0oa5.mongodb.net/test`;
 
 module.exports = async (app) => {
     try {
