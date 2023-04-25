@@ -33,6 +33,9 @@ const carSchema = new Schema({
     }, 
     doors: {
         type: Number
+    }, 
+    image: {
+        type: String
     }
 
     /* TODO

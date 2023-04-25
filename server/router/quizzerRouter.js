@@ -1,6 +1,6 @@
 const router = require('express').Router();
 
-const { getAllCars} = require('../controllers/quizesController');
+const { getAllCars, createCar} = require('../controllers/quizesController');
 
 router.get('/allCars', async (req, res) => {
     const result = await getAllCars();
@@ -9,61 +9,28 @@ router.get('/allCars', async (req, res) => {
 })
 
 router.post('/createCar', async (req, res) => {
-    // try {
+    try {
+        const data = {
+            brand: req.body.brand,
+            model: req.body.model,
+            seats: req.body.seats,
+            pricePerDay: req.body.pricePerDay,
+            carClass: req.body.carClass,
+            extras: req.body.extras,
+            typeCar: req.body.typeCar,
+            transmission: req.body.transmission,
+            doors: req.body.doors,
+            image: req.body.image,
+        };
 
+        // console.log(req.headers)
 
-    //     const token = req.headers['token'];
-
-    //     if (!token) {
-    //         throw new Error('You have to log in to create recipe.')
-    //     }
-
-
-    //     const userData = parseJwt(token);
-    //     const user = await getUserByEmail(userData.email);
-
-
-
-    //     const data = {
-    //         title: req.body.title,
-    //         description: req.body.description,
-    //         topic: req.body.topic,
-    //         difficulty: req.body.difficulty,
-    //         questions: req.body.questions,
-    //         author: user._id,
-    //         authorEmail: user.email
-    //     };
-
-
-
-
-    //     // console.log(req.headers)
-
-    //     const result = await createQuiz(data);
-
-
-
-    //     for (let followerId of user.followers) {
-    //         if (followerId) {
-    //             console.log(followerId)
-    //             const follower = await getUserById(followerId)
-    //             console.log(follower)
-    //             follower.newsFeed.push(result)
-    //             console.log(follower.newsFeed)
-    //             await follower.save()
-    //         }
-
-    //     }
-
-    //     user.quizesCreated.push(result)
-    //     user.rating += 1;
-    //     await user.save()
-
-    //     res.status(201).json({ message: 'Quiz created successfully' });
-    // } catch (err) {
-    //     res.json({ message: err.message })
-    //     console.log(err)
-    // }
+        const result = await createCar(data);
+        res.status(201).json({ message: 'Quiz created successfully', result });
+    } catch (err) {
+        res.json({ message: err.message })
+        console.log(err)
+    }
 
 });
 

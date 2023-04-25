@@ -1,0 +1,8 @@
+.carsDiv {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 5%;
+}

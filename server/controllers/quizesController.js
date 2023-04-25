@@ -5,12 +5,12 @@ async function getAllCars() {
     return result;
 }
 
-// async function createCar(data) {
-//     const result = new Quiz(data);
-//     await result.save();
+async function createCar(data) {
+    const result = new Car(data);
+    await result.save();
 
-//     return result;
-// }
+    return result;
+}
 
 // async function getOneQuiz (_id) {
 //     const result = await Quiz.findOne({_id})
@@ -24,5 +24,5 @@ async function getAllCars() {
 
 module.exports = {
     getAllCars,
-    
+    createCar
 }
