@@ -1,7 +1,5 @@
-import '../../Layout/css/App.css';
-import Header from '../../Layout/components/Header';
-import Footer from '../../Layout/components/Footer';
-import CarCard from '../../Layout/components/Card';
+import '../../css/App.css';
+import CarCard from '../Card';
 import { useEffect, useState } from 'react';
 import styles from './Cars.module.css'
 
