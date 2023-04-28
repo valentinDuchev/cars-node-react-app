@@ -1,11 +1,12 @@
 import '../Layout/css/App.css';
-import Header from '../Layout/components/Header/Header';
-import Footer from '../Layout/components/Footer/Footer';
+import ContactsImage from '../Layout/components/Contacts/ContactsImage';
+import ContactsInfo from '../Layout/components/Contacts/ContactsInfo';
 
 function Contacts() {
   return (
     <div>
-
+      <ContactsImage/>
+      <ContactsInfo/>
     </div>
   );
 }

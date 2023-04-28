@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import './Layout/css/App.css';
 import Home from "./Pages/Home";
