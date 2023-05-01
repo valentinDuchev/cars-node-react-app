@@ -3,7 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import styles from './Header.module.css';
 import { useNavigate } from "react-router-dom";
-
+import logo from "../../images/logo.jpg";
 
 export default function Header() {
   const navigate = useNavigate();
@@ -28,7 +28,10 @@ export default function Header() {
     <Navbar expand="lg" className={styles.navbar}>
       <Container>
         <Navbar.Brand>
-
+         <a href="/">
+              <img src={logo} className={styles.logo} alt="restaurant logo" />
+              <span className={styles.rentalName}>Apex</span>
+            </a>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

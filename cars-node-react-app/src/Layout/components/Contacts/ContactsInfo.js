@@ -33,7 +33,7 @@ export default function ContactsInfo() {
             <Row className={styles.secondRow}>
                 <Col>
                     <h3>Вижте къде сме на картата:</h3>
-                    <iframe src="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB.+%E2%80%9E%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D1%81%D0%BB%D0%B0%D0%B2+%D0%92%D0%B0%D1%80%D0%BD%D0%B5%D0%BD%D1%87%D0%B8%D0%BA%E2%80%9C+18,+9000+%D0%92%D0%B0%D1%80%D0%BD%D0%B0+%D0%A6%D0%B5%D0%BD%D1%82%D1%8A%D1%80,+%D0%92%D0%B0%D1%80%D0%BD%D0%B0/@43.2071372,27.9082566,17z/data=!4m16!1m9!3m8!1s0x40a4538aa3c04083:0xe501ffb3ecd18d82!2z0LHRg9C7LiDigJ7QktC70LDQtNC40YHQu9Cw0LIg0JLQsNGA0L3QtdC90YfQuNC64oCcIDE4LCA5MDAwINCS0LDRgNC90LAg0KbQtdC90YLRitGALCDQktCw0YDQvdCw!3b1!8m2!3d43.2071372!4d27.9104453!10e5!16s%2Fg%2F11c28wr23z!3m5!1s0x40a4538aa3c04083:0xe501ffb3ecd18d82!8m2!3d43.2071372!4d27.9104453!16s%2Fg%2F11c28wr23z" title='location' width="500" height="350" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2908.1121416197316!2d27.908256615483378!3d43.20713717913919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a4538aa3c04083%3A0xe501ffb3ecd18d82!2z0LHRg9C7LiDigJ7QktC70LDQtNC40YHQu9Cw0LIg0JLQsNGA0L3QtdC90YfQuNC64oCcIDE4LCA5MDAwINCS0LDRgNC90LAg0KbQtdC90YLRitGALCDQktCw0YDQvdCw!5e0!3m2!1sbg!2sbg!4v1682819449109!5m2!1sbg!2sbg" title='location' width="500" height="350" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                 </Col>
                 <Col>
                     <h3>Свържете се с нас: </h3> <br/>

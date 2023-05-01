@@ -34,3 +34,12 @@
 .brand {
     text-align: left;
 }
+
+.rentalName {
+    color: black;
+    font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
