@@ -1,0 +1,30 @@
+.banner-section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  background-color: #2d2d2d;
+  margin: 8rem 0;
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.banner-content {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.banner-content__text__h2 {
+  font-size: 3rem;
+  font-family: Poppins,sans-serif;
+  font-weight: bold;
+}
+
+@media (max-width: 550px) {
+  .banner-content__text__h2 {
+    font-size: 2.5rem;
+  }
+}

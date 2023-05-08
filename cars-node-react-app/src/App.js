@@ -1,11 +1,13 @@
+// eslint-disable-next-line
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import './Layout/css/App.css';
 import Home from "./Pages/Home";
 import About from "./Pages/About";
-import Cars from "./Pages/Cars/Cars";
+import Cars from "./Layout/components/Cars/Cars";
 import Contacts from "./Pages/Contacts";
-import Header from "./Layout/components/Header";
-import { CarDetails } from "./Pages/CarDetails/CarDetails";
+import Header from "./Layout/components/Header/Header";
+import Footer from "./Layout/components/Footer/Footer";
+import { CarDetails } from "./Layout/components/CarDetails/CarDetails";
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
         <Route path='/contacts' element={<Contacts />} />
         <Route path='/car/:id' element={<CarDetails />} />
       </Routes>
+      <Footer/>
     </div>
   );
 }

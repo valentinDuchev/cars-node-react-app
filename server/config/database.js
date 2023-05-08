@@ -21,6 +21,10 @@ module.exports = async (app) => {
         });
     } catch (err) {
         console.error('Error connecting to database');
+<<<<<<< HEAD
         console.log(err)
+=======
+        process.exit(1);
+>>>>>>> 63acf77d70447a02735dffae97a2f78fa9c03c89
     }
 }

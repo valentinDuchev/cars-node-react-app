@@ -1,8 +1,8 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
-import styles from '../css/Footer.module.css';
-import '../css/all.min.css';
+import styles from './Footer.module.css';
+import '../../css/all.min.css';
 
 export default function Footer() {
   return (

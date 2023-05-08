@@ -1,12 +1,13 @@
 import '../Layout/css/App.css';
-import Header from '../Layout/components/Header';
-import Footer from '../Layout/components/Footer';
-
+import ContactsImage from '../Layout/components/Contacts/ContactsImage';
+import ContactsInfo from '../Layout/components/Contacts/ContactsInfo';
+import Banner from '../Layout/components/Banner/Banner';
 function Contacts() {
   return (
     <div>
-      <Header/>
-      <Footer/>
+      <ContactsImage/>
+      <ContactsInfo/>
+      <Banner/>
     </div>
   );
 }

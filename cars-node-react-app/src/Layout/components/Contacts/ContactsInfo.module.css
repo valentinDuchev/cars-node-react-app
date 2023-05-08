@@ -1,0 +1,53 @@
+.contactsRow i {
+    font-size: 40px;
+    margin-bottom: 1rem;
+}
+
+.location {
+    color: red;
+}
+
+.phone {
+    color: orange;
+}
+
+.mail {
+    color: green;
+}
+
+.workingTime {
+    color: cornflowerblue;
+}
+
+.contactsRow p {
+    margin-bottom: 0;
+}
+
+.secondRow h3 {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.contactsRow {
+    margin-bottom: 2rem;
+}
+
+iframe {
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (max-width: 767.5px) {
+    .contactsRow {
+        display: contents;
+    }
+
+    .contactsCol {
+        margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width: 991.5px) {
+    .secondRow {
+        display: contents;
+    }
+}
