@@ -1,0 +1,16 @@
+.bookCar {
+    min-height: 600px;
+    
+
+    width: 80%;
+    background-color: aliceblue;
+    min-height: 620px;
+    opacity: 0.8;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+
+    display: grid;
+    grid-template-columns: 20% 80%;
+    background: -webkit-linear-gradient(#a4a4a5, #fefdff);
+}

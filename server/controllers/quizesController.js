@@ -1,4 +1,5 @@
-const Car = require("../models/Car")
+const Car = require("../models/Car");
+const Reservation = require("../models/Reservation");
 
 async function getAllCars() {
     const result = await Car.find({});
@@ -12,10 +13,18 @@ async function createCar(data) {
     return result;
 }
 
-// async function getOneQuiz (_id) {
-//     const result = await Quiz.findOne({_id})
-//     return result;
-// }
+async function getOnecar (_id) {
+    const result = await Car.findOne({_id})
+    return result;
+}
+
+async function createReservation (data) {
+
+    const result = new Reservation(data)
+    await result.save()
+
+    return result;
+}
 
 // async function deleteById(id) {
 //     await Quiz.findByIdAndDelete(id);
@@ -24,5 +33,7 @@ async function createCar(data) {
 
 module.exports = {
     getAllCars,
-    createCar
+    createCar, 
+    getOnecar, 
+    createReservation
 }
