@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Form, Button, Row, Col } from 'react-bootstrap';
-// import emailjs from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
 import styles from '../Contacts/ContactsForm.module.css';
 
 export default function ContactsForm() {
@@ -21,17 +21,17 @@ export default function ContactsForm() {
       comments,
     };
 
-    // emailjs.send('service_ajfs478', 'template_4tvrfgp', templateParams, 'FYMcx3OMEr_ndqfRD')
-    //   .then((response) => {
-    //     console.log('SUCCESS!', response.status, response.text);
-    //     setFirstName('');
-    //     setLastName('');
-    //     setEmail('');
-    //     setPhone('');
-    //     setComments('');
-    //   }, (error) => {
-    //     console.log('FAILED...', error);
-    //   });
+    emailjs.send('service_ajfs478', 'template_4tvrfgp', templateParams, 'FYMcx3OMEr_ndqfRD')
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
+        setFirstName('');
+        setLastName('');
+        setEmail('');
+        setPhone('');
+        setComments('');
+      }, (error) => {
+        console.log('FAILED...', error);
+      });
   }
 
   return (
