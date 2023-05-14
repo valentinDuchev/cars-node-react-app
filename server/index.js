@@ -44,5 +44,5 @@ async function start() {
         res.json({ message: 'It works' })
     })
 
-    app.listen(3001, () => console.log('Server started on port 3001'));
+    app.listen(3005, () => console.log('Server started on port 3005'));
 }

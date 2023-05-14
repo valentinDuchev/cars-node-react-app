@@ -44,7 +44,7 @@ export const CarDetails = () => {
 
     useEffect(() => {
         try {
-            fetch(`http://localhost:3001/api/car/${id}`, {
+            fetch(`http://localhost:3005/api/car/${id}`, {
                 headers: {
                     'Content-type': 'application/json; charset=UTF-8',
                 }
@@ -86,7 +86,7 @@ export const CarDetails = () => {
         setData(data)
 
         try {
-            fetch('http://localhost:3001/api/reservation', {
+            fetch('http://localhost:3005/api/reservation', {
                 method: 'POST',
                 body: JSON.stringify({
                     firstName,
