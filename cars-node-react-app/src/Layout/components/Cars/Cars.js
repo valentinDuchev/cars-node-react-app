@@ -251,9 +251,9 @@ function Cars() {
   return (
     <div>
 
-      <button onClick={handleShow}>Sort Cars</button>
+      <button onClick={handleShow}>Сортирай</button>
 
-      <button onClick={resetFilters}>Reset Filters</button>
+      <button onClick={resetFilters}>Изчисти филтрите</button>
 
       <div className={styles.carsDiv}>
 
