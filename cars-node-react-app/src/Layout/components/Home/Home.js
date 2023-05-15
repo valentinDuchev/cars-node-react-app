@@ -1,4 +1,5 @@
 // import '../Layout/css/App.css';
+import { Link } from 'react-router-dom';
 import styles from './Home.module.css'
 
 function Home() {
@@ -10,7 +11,7 @@ function Home() {
           <legend className={styles.borderText}>&nbsp; APEX</legend>
           <h1>Наеми своята мечтана кола</h1>
           <p>Чрез Apex можете да наемете колата, която винаги сте мечтали да карате!</p>
-          <a href="#scroll2"><button>Резервирай сега!</button></a>
+          <Link to="http://localhost:3000/cars"><button>Резервирай сега!</button></Link>
         </fieldset></div>
 
 
