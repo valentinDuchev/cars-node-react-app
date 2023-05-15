@@ -9,20 +9,20 @@ function CarCard(props) {
             <Card.Body>
                 <Card.Title>{props.brand} {props.model}</Card.Title>
                 <Card.Text>
-                    {props.doors} Doors,
-                    {props.seats} Seats,
+                    {props.doors} Врати,
+                    {props.seats} Места,
                     { }
                     {props.extras.map((extra) => extra + ', ')}
                 </Card.Text>
             </Card.Body>
             <ListGroup className="list-group-flush">
-                <ListGroup.Item>Class: {props.carClass}</ListGroup.Item>
-                <ListGroup.Item>Type: {props.typeCar}</ListGroup.Item>
-                <ListGroup.Item>Transmission: {props.transmission}</ListGroup.Item>
-                <ListGroup.Item>Price: ${props.pricePerDay}/Day</ListGroup.Item>
+                <ListGroup.Item>Клас: {props.carClass}</ListGroup.Item>
+                <ListGroup.Item>Тип: {props.typeCar}</ListGroup.Item>
+                <ListGroup.Item>Трансмисия: {props.transmission}</ListGroup.Item>
+                <ListGroup.Item>Цена: {props.pricePerDay} лв/Ден</ListGroup.Item>
             </ListGroup>
             <Card.Body>
-                <Card.Link as={Link} to={`http://localhost:3000/car/${props.id}`}>Book that car</Card.Link>
+                <Card.Link as={Link} to={`http://localhost:3000/car/${props.id}`}>Резервирай този автомобил</Card.Link>
             </Card.Body>
         </Card>
     );

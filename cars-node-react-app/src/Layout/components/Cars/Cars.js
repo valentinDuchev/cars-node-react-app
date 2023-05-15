@@ -335,7 +335,7 @@ function Cars() {
                   <option value="SUBARU">SUBARU</option>
                   <option value="SUZUKI">SUZUKI</option>
                   <option value="TOYOTA">TOYOTA</option>
-                  <option value="VOLKSWAGEN">VOLKSWAGEN</option>
+                  <option value="VW">VOLKSWAGEN</option>
                   <option value="VOLVO">VOLVO</option>
                 </select>
               </div>
@@ -352,10 +352,10 @@ function Cars() {
               <div style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto' }} >
                 <select data-placeholder="Type" className="chzn-select" tabIndex="2" id="class" onChange={(e) => setCarClass(e.target.value)} value={carClass}>
                   <option value="">Клас</option>
-                  <option value="Muscle">Muscle Car</option>
-                  <option value="Luxury">Luxury</option>
-                  <option value="Middle">Middle</option>
-                  <option value="Low">Low</option>
+                  <option value="Muscle">Американски "Muscle" Автомобил</option>
+                  <option value="Luxury">Висок клас</option>
+                  <option value="Middle">Среден клас</option>
+                  <option value="Low">Нисък клас</option>
                 </select>
               </div>
 
@@ -370,11 +370,11 @@ function Cars() {
               <div style={{ marginLeft: 'auto', marginRight: 'auto' }} >
                 <select data-placeholder="Type" className="chzn-select" tabIndex="2" id="price" name="price" onChange={(e) => setPrice(e.target.value)} value={price}>
                   <option value="">Цена /на ден/</option>
-                  <option value="25-50">25-50</option>
-                  <option value="51-75">51-75</option>
-                  <option value="76-100">76-100</option>
-                  <option value="101-150">101-150</option>
-                  <option value="151+">151+</option>
+                  <option value="25-50">25-50 лв</option>
+                  <option value="51-75">51-75 лв</option>
+                  <option value="76-100">76-100 лв</option>
+                  <option value="101-150">101-150 лв</option>
+                  <option value="151+">151+ лв</option>
                 </select>
               </div>
 
